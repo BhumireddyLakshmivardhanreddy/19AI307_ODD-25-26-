@@ -1,46 +1,27 @@
 # Ex.No:1(A) INTRODUCTION TO JAVA PROGRAMMING, DATA TYPES, VARIABLES AND OPERATORS
 
 ## QUESTION:
-Lovely has mastered printing in Java, and now she wants to learn how arithmetic operators work. She’s curious about how Java can add, subtract, multiply, divide, and find remainders of two numbers.
+Lovely has just started learning Java and is very excited about how to display messages on the screen. Her first mission is to understand how different types of print statements work:
 
-Write a Java program that:
+System.out.print() → prints on the same line
 
-Accepts two integer numbers from the user.
+System.out.println() → prints and moves to the next line
 
-Demonstrates all 5 arithmetic operations:
-
-Addition (+)
-
-Subtraction (-)
-
-Multiplication (*)
-
-Division (/)
-
-Modulus (%)
-
-Displays the result of each operation in a separate line with a clear message.
+System.out.printf() → prints formatted output
 
 
 ## AIM:
-Aim:
-To write a Java program that reads two integer numbers from the user and performs basic arithmetic operations such as addition, subtraction, multiplication, division, and modulus, and displays the results.
-
+To write a Java program that demonstrates the use of variables, data types, operators, and different print statements (print, println, and printf).
 
 ## ALGORITHM :
-1. Start the program.
-2. Create an object of the Scanner class to take input from the user.
-3. Read the first integer input from the user and store it in variable num1.
-4. Read the second integer input from the user and store it in variable num2.
-5. Calculate the sum of num1 and num2, and display the result.
-6. Calculate the difference (num1 - num2), and display the result.
-7. Calculate the product of num1 and num2, and display the result.
-8. Calculate the quotient of num1 divided by num2, and display the result.
-9. Calculate the remainder of num1 divided by num2, and display the result.
-10. Close the Scanner object.
-
-
-
+1.	Start the program.
+2.	Import the required package java.util.* (optional).
+3.	Declare variables of different data types (int, float, char, String).
+4.	Perform simple arithmetic operations using operators.
+5.	Use System.out.print() to display output on the same line.
+6.	Use System.out.println() to display output on the next line.
+7.	Use System.out.printf() to print formatted output.
+8.	End the program.
 
 ## PROGRAM:
  ```
@@ -53,22 +34,18 @@ RegisterNumber: 212223240016
 
 ## Sourcecode.java:
 ```
-import java.util.Scanner;
-
-public class ArithmeticOperations {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int num1 = sc.nextInt();
-        int num2 = sc.nextInt();
-
-        System.out.println("Sum = " + (num1 + num2));
-        System.out.println("Difference = " + (num1 - num2));
-        System.out.println("Product = " + (num1 * num2));
-        System.out.println("Quotient = " + (num1 / num2));
-        System.out.println("Remainder = " + (num1 % num2));
-
-        sc.close();
+import java.util.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        String name=sc.next();
+        int age=sc.nextInt();
+        double num=sc.nextDouble();
+        System.out.println("Hello, "+name);
+        System.out.println("You are "+age+" years old");
+        System.out.printf("Your favorite number is %.2f ",num);
     }
 }
 ```
@@ -76,13 +53,13 @@ public class ArithmeticOperations {
 
 
 
-## OUTPUT:
-<img width="1252" height="354" alt="image" src="https://github.com/user-attachments/assets/b42fd06e-6ade-4df2-a3a3-8d25a65b9d7e" />
 
+## OUTPUT:
+<img width="766" height="385" alt="Screenshot 2025-11-14 105812" src="https://github.com/user-attachments/assets/8ca3a2e4-e913-4c3f-a8bf-73827075ab57" />
 
 
 ## RESULT:
-Therefore the program has been executed successfully.
+Thus, the Java program demonstrating variables, data types, operators, and print statements was successfully executed.
 
 
 
